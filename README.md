@@ -21,8 +21,8 @@ Civilizational leaps are not merely accumulations of innovation, but **structura
 pip install civilization-metamodel
 
 # OR install from source
-git clone https://github.com/YOUR_USERNAME/civilization-meta-model.git
-cd civilization-meta-model
+git clone https://github.com/hedmx/Civilization-Meta-Model.git
+cd Civilization-Meta-Model
 pip install -e .
 Run your first simulation in 3 lines:
 
@@ -151,7 +151,7 @@ bibtex
   title = {Civilization Meta-Model: A Computational Framework for Civilizational Phase Transitions},
   author = {Civilization Meta-Model Contributors},
   year = {2024},
-  url = {https://github.com/YOUR_USERNAME/civilization-meta-model},
+  url = {https://github.com/hedmx/Civilization-Meta-Model},
   version = {0.1.0}
 }
 🔗 Related Work

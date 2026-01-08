@@ -18,8 +18,8 @@ bash
 pip install civilization-metamodel
 
 # 或从源码安装
-git clone https://github.com/YOUR_USERNAME/civilization-meta-model.git
-cd civilization-meta-model
+git clone https://github.com/hedmx/Civilization-Meta-Model.git
+cd Civilization-Meta-Model
 pip install -e .
 用3行代码运行你的第一个模拟：
 
@@ -147,7 +147,7 @@ bibtex
   title = {Civilization Meta-Model: A Computational Framework for Civilizational Phase Transitions},
   author = {Civilization Meta-Model Contributors},
   year = {2024},
-  url = {https://github.com/YOUR_USERNAME/civilization-meta-model},
+  url = {https://github.com/hedmx/Civilization-Meta-Model},
   version = {0.1.0}
 }
 🔗 相关工作
