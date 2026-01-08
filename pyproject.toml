@@ -5,7 +5,8 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "civilization-metamodel"
 version = "0.1.0"
-authors = [{name = "Civilization Meta-Model Contributors"}]
+authors = [{name = "Civilization Meta-Model Contributors"},
+           {name = "MarvinTao", email = "3532370@qq.com"} ]
 description = "A computational framework for simulating civilizational phase transitions"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -14,6 +15,9 @@ license = {text = "MIT License"}
 dependencies = [
     "numpy>=1.21",
     "matplotlib>=3.5",
+    "tqdm>=4.0", 
+    "scipy>=1.9",       
+    "seaborn>=0.12",   
 ]
 
 [tool.setuptools.packages.find]
