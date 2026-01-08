@@ -5,20 +5,57 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "civilization-metamodel"
 version = "0.1.0"
-authors = [{name = "Civilization Meta-Model Contributors"},
-           {name = "MarvinTao", email = "3532370@qq.com"} ]
+authors = [
+    {name = "Civilization Meta-Model Contributors"},
+    {name = "MarvinTao", email = "3532370@qq.com"}
+]
 description = "A computational framework for simulating civilizational phase transitions"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT License"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
 
 dependencies = [
     "numpy>=1.21",
     "matplotlib>=3.5",
-    "tqdm>=4.0", 
-    "scipy>=1.9",       
-    "seaborn>=0.12",   
+    "scipy>=1.9",
+    "tqdm>=4.64",
+    "seaborn>=0.12",
+    "networkx>=3.0",
 ]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "black>=23.0",
+    "flake8>=6.0",
+    "jupyter>=1.0",
+    "networkx>=3.0",  # 为未来扩展准备
+]
+docs = [
+    "sphinx>=7.0",
+    "sphinx-rtd-theme>=1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/hedmx/Civilization-Meta-Model"
+Documentation = "https://hedmx.github.io/Civilization-Meta-Model/"
+Repository = "https://github.com/hedmx/Civilization-Meta-Model.git"
+Issues = "https://github.com/hedmx/Civilization-Meta-Model/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.txt", "*.md", "*.toml"]
